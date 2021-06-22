@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'udemy-shopper';
+
+  loadedFeature = 'recipe';
+  onNavigate(feauture: string) {
+    this.loadedFeature = feauture
+  }
 }

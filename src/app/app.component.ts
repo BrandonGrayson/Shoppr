@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'udemy-shopper';
 
   loadedFeature = 'recipe';
+  
   onNavigate(feauture: string) {
     this.loadedFeature = feauture
   }

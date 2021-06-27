@@ -24,6 +24,9 @@ export class ShoppingEditComponent implements OnInit {
 
     const newIngredientAdded = new Ingredient(ingredientName, ingredientAmount)
 
+    // emit our own event and pass the Ingredient as data
+    this.ingredientAdded.emit(newIngredientAdded)
+
   }
 
 }
